@@ -1,25 +1,29 @@
-Thank you for trying out Shango Beta.  Please submit your issues with the following information
+Thank you for trying out Shango Beta.  Issue tracker is **ONLY** used for reporting bugs. NO NEW FEATURE ACCEPTED! Use [stackoverflow](https://stackoverflow.com) for supporting issues. 
 
-OS (Android/iOS)                            :
-Version of OS                               :
-Device Name                                 :
-Shango Version                              :
-Device ID (Look in Settings-About Shango)   :
+Please submit your issues with the following information
 
-Description of the Problem:
+- OS (Android/iOS)   
+- Version of OS  
+- Device Make and Model   
+- Shango Version  
+- Device ID (Look in Settings-About Shango)  
 
+<!--- Provide a general summary of the issue in the Title above -->
 
+## Expected Behavior
+<!--- Tell us what should happen -->
 
+## Current Behavior
+<!--- Tell us what happens instead of the expected behavior -->
 
+## Possible Solution or Best way to handle this problem
+<!--- Not obligatory, but suggest a fix/reason for the bug, -->
 
-Expected Behaviour:
-
-
-
-
-
-
-Actual Behaviour:
-
-
+## Steps to Reproduce
+<!--- Provide a link to a live example, or an unambiguous set of steps to -->
+<!--- reproduce this bug. Include code to reproduce, if relevant -->
+1.
+2.
+3.
+4.
 
