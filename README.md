@@ -40,7 +40,7 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 ## FAQ
 
-1. I'm scared of using cloud services for financial transactions. If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if you get hacked? I FEAR change!!!! 
+#### 1. I'm scared of using cloud services for financial transactions. If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if you get hacked? I FEAR change!!!! 
 
 Chill. Before you run around screaming 'Custodial Wallet! Bad! Bad! Bad!',let us first discuss the long-standing myth and false notion that using cloud services is 'insecure'.
 
