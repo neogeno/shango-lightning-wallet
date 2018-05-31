@@ -64,6 +64,8 @@ Shango is built around portable, stateless docker containers managed by the ECS 
 
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers, Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
+- Shango is released as open source software. So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see.
+
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
 
 #### 3. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
