@@ -78,7 +78,15 @@ I know there are other proposed solutions like Watchtowers (https://www.coindesk
 
 Moreover, the promise of LN is that we can do fast, Ubiquitous transfers and what is the point if you can only send funds but not receive funds whilst you are mobile? How is your friend going to pay you back for his share of dinner and how will you receive refunds for purchases?
 
-The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty. If fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
+The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty. If fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable / decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
+
+#### 4. Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid? I want my fiat paper money and abacus!
+
+True, keeping funds online and connected to the internet entails a fair amount of risk, even if it can be managed. Your funds are ultimately, like in any blockchain, only as secure as your private keys.
+
+That said, there are best practices you can adopt to reduce the risk. Just like keeping your money off crypto exchange hot wallets is a good idea it is also a good idea to keep the bulk of your funds ON-CHAIN in a paper wallet/cold storage unplugged from any technology. With a metal etched wallet http://bitcoinist.com/bitstashers-upgrade-paper-wallet-metal/  even an EMP or fire can't take out your key.
+
+Keep only funds for immediate and daily spending on your Lightning wallet and then move funds back and forth to your offline master wallet as needed. This way, even if you lose all your funds on your Lightning node, at least you are not broke.
 
 
 
