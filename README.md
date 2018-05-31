@@ -40,20 +40,21 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 ## FAQ
 
-#### 1. I'm scared of using cloud services for financial transactions. If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if you get hacked? I FEAR change!!!! 
+#### 1. I'm scared of using cloud services for financial transactions. I FEAR change!!!! 
 
 Chill. Before you run around screaming 'Custodial Wallet! Bad! Bad! Bad!',let us first discuss the long-standing myth and false notion that using cloud services is 'insecure'.
 
 Shango is backed by cloud infrastructure from Amazon Web Services (AWS) - the biggest and most reliable cloud partner on the planet trusted by Fortune 500 companies. According to these links here https://aws.amazon.com/compliance/iso-27001-faqs/ and https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-supports-container-workloads-regulated-by-iso-pci-soc-and-hipaa/ it looks like they have invested a lot into security.
 
-As you can see, they are a ISO 9001, 27001, PCI DSS2, SOC 1, SOC 2, and SOC 3 HIPAA certified data centre for your node authorised to handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security and monitored 24x7 by a dedidcated team. Do you think your own server is just as safe?
+As you can see, they are a ISO 9001, 27001, PCI DSS2, SOC 1, SOC 2, and SOC 3 HIPAA certified data centre for your node authorised to handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security and monitored 24x7 by a dedicated team. Do you think your own server is just as safe?
 
  This is in contrast to the false sense of security you get with your privately managed server at home or phone based wallet where you can lose power and data anytime, and has WIFI access to make it easily accessible by hackers outside your door and where any other software installed could be compromising your machine already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
 
-I don't know about you but I personally don't have the time or resources to build industrial strength security into my own private Raspberry Pi node and if my money was truly at stake  I would much rather be trusting a professional service than myself any day. Not that AWS is unhackable, but the chances are far less and and at the end of the day, if they get hacked you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing them for damages than trying to get back your funds you lost from your Windows PC because you forgot to change your password regularly. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $2M in losses``` or  ```Guy loses his life savings stored on his Windows PC because he didn't change his password``` ??
+I don't know about you but I personally don't have the time or resources to build industrial strength security into my own private Raspberry Pi node and if my money was truly at stake  I would much rather be trusting a professional service than myself any day. Not that AWS is unhackable, but the chances are far less and at the end of the day, if they get hacked you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing them for damages than trying to get back your funds you lost from your Windows PC because you forgot to change your password regularly. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
-Now since you know my stance on cloud computing, we can talk about the 
-security measures we have put in place. Shango is built around portable, stateless docker containers managed by the ECS FARGATE service from AWS. This means that :
+#### 2. What security measures are in place when I use Shango Cloud Nodes? If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if Shango gets hacked?
+
+Shango is built around portable, stateless docker containers managed by the ECS FARGATE service from AWS. This means that :
 
 - Nobody, not even myself has access to the underlying infrastructure of the nodes. i.e. There is no individual server you can setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time.
 
@@ -65,7 +66,7 @@ security measures we have put in place. Shango is built around portable, statele
 
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
 
-#### 2. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
+#### 3. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
 I believe there is a better alternative to running a half-disabled node on your phone. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. 
 
