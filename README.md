@@ -22,7 +22,7 @@ Get some Testnet coins! My usual places to get shiny new testnet coins are liste
 ### 4. Open Channels (optional)
 Wait for Channels to open. By default autopilot mode is enabled with a commitment of 30% of your funds to open channels. This means that LND will seek out the best nodes to open channels with without any intervention on your part. Relax, your funds may look like they have been spent from your balance but they are actually still in your control and can be redeemed anytime when you close the channels.
 
-However, you may wish to expand beyond what autopilot does by fine tuning whom you open channels with. For example, if you are testing regualrly with a specific crypto exchange, merchant or friend it may be advisable to manually open a channel with them. Set amounts in both directions e.g. have half the balance on your local side and the other half on the remote side. This allows value to move both ways along the channel.
+However, you may wish to expand beyond what autopilot does by fine tuning whom you open channels with. For example, if you are testing regualrly with a specific crypto exchange, merchant or friend it may be advisable to manually open a channel with them. Try to select counterparties which already have a lot of channels open with others, and remember to set amounts in both directions e.g. have half the balance on your local side and the other half on the remote side. This allows value to move both ways along the channel.
 
 Your goal is to get as 'well connected' as you can, as soon as possible so that you have the highest possible chance of routing payments to/from your node.
 
