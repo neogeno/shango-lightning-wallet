@@ -32,7 +32,7 @@ Try sending an instant Lightning payment to one of the following demo stores:
 * https://starblocks.acinq.co/#/
 * https://yalls.org/
 
-Note: Whilst opening a channel directly the above sites is optional, it may help you get transfers done faster and save a few Satoshis in fees. 
+Note: Whilst opening a channel directly to the above sites is optional, it may help you get transfers done faster and save a few Satoshis in fees. 
 
 For Starblocks, the best node to manually open a channel to is this endurance node: 
 ```03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134@34.250.234.192:9735```
