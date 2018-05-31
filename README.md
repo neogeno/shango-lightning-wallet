@@ -55,7 +55,7 @@ I don't know about you but I personally don't have the time or resources to buil
 Now since you know my stance on cloud computing, we can talk about the 
 security measures we have put in place. Shango is built around portable, stateless docker containers managed by the ECS FARGATE service from AWS. This means that :
 
-- Nobody, not even myself has access to the underlying infrastructure of the nodes. i.e. There is no individual server you can attack as it is spread scross multiple zones and computing resources and changes at any time.
+- Nobody, not even myself has access to the underlying infrastructure of the nodes. i.e. There is no individual server you can setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time.
 
 - Once the node shuts down, all the data is lost forever so there is no trace of your private information
 
@@ -64,6 +64,17 @@ security measures we have put in place. Shango is built around portable, statele
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers, Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
+
+#### 2. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
+
+I believe there is a better alternative to running a half-disabled node on your phone. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. 
+
+I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else so this is just the same as outsourcing your node in the first place.
+
+Moreover, the promise of LN is that we can do fast, Ubiquitous transfers and what is the point if you can only send funds but not receive funds whilst you are mobile? How is your friend going to pay you back for his share of dinner and how will you receive refunds for purchases?
+
+The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty.  This is and should be the preferred solution at this moment in time.
+
 
 
 
