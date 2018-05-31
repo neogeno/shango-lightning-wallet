@@ -70,7 +70,9 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 
 #### 3. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-I believe there is a better alternative to running a half-disabled node on your phone. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. 
+I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. 
+
+The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. 
 
 I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else so this is just the same as outsourcing your node in the first place.
 
