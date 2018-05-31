@@ -22,7 +22,7 @@ Get some Testnet coins! My usual places to get shiny new testnet coins are liste
 #### 4. Open Channels (optional)
 Wait for Channels to open and have the **'Active'** badge near the right. By default autopilot mode is enabled with a commitment of 30% of your funds to open channels. This means that LND will seek out the best nodes to open channels with without any intervention on your part. Relax, your funds may look like they have been spent from your wallet balance but they are actually still in your control and can be redeemed anytime when you close the channels.
 
-However, you may wish to expand beyond what autopilot does by fine tuning whom you open channels with. For example, if you are testing regualrly with a specific crypto exchange, merchant or friend it may be advisable to manually open a channel with them. Try to select counterparties which already have a lot of channels open with others, and remember to set amounts in both directions e.g. have half the balance on your local side and the other half on the remote side. This allows value to move both ways along the channel.
+However, you may wish to expand beyond what autopilot does by fine tuning whom you open channels with. For example, if you are testing regularly with a specific crypto exchange, merchant or friend it may be advisable to manually open a channel with them. Try to select counterparties which already have a lot of channels open with others, and remember to set amounts in both directions e.g. have half the balance on your local side and the other half on the remote side. This allows value to move both ways along the channel.
 
 Your goal is to get as 'well connected' as you can, as soon as possible so that you have the highest possible chance of routing payments to/from your node.
 
@@ -78,7 +78,7 @@ I know there are other proposed solutions like Watchtowers (https://www.coindesk
 
 Moreover, the promise of LN is that we can do fast, Ubiquitous transfers and what is the point if you can only send funds but not receive funds whilst you are mobile? How is your friend going to pay you back for his share of dinner and how will you receive refunds for purchases?
 
-The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty.  This is and should be the preferred solution at this moment in time.
+The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty. If fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
 
 
 
