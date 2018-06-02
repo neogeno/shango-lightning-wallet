@@ -3,7 +3,9 @@
 ## Quick Start
 
 #### 1. Install App
-Install the Shango app from Google Play or iTunes App Store. As of now the app is running an invite-only BETA testing, so expect some bugs and some waiting. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases. Invites will be sent in batches. For help on joining the beta, see the articles below for your platform: 
+Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+
+Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
 
 * iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
 * Google Play Beta : https://support.google.com/googleplay/answer/7003180?hl=en 
