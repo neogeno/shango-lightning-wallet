@@ -55,6 +55,8 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 [5. Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!](#5)
 
+[6. I trust AWS. I don't trust you. What can I do about this?](#6)
+
 #### 1. 
 #### I'm scared of using cloud services for financial transactions. Cloud Servers are insecure. I FEAR change!!!! 
 
