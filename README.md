@@ -81,6 +81,8 @@ Shango is built around portable, stateless docker containers managed by the ECS 
 
 - All the LND folders are **encrypted** with a passphrase set by YOU. That means that even if someone did get access to the files, they would be unable to read them without your passphrase. 
 
+- Using docker, each node is isolated from the others, has no external SSH access and runs nothing except the LND open source software. 
+
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers, Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
 - Shango is released as open source software. So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see.
