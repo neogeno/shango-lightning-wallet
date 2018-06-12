@@ -90,15 +90,26 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 #### 3.
 #### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. 
+##### Functional Benefits
 
-The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. 
+* **Quick On-boarding**. I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
+<br>
+* **Send and Receive payments**. Shango can send and receive payments with no additional software. Due to security reasons, most wallets will not allow you to receive payments on your phone. If they do, they do it by having additional layers of servers in between to accomplish this and this means they are no longer running a pure LND server and have their own code added to it.
+<br>
+* **Better security**. Your own node or Shango cloud nodes **can be** online all the time, mobile wallets are not. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else so this is just the same as outsourcing your node in the first place. 
+The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty.
+<br>
+* **Stability**. LND was written with a server running Linux in mind. It was not designed to run on a mobile device and the current wallets in the market try to shoehorn it into running on your phone. This will inevitably result in crashes, unexpected behaviour and will take a lot of effort before it comes close to the operation of LND running a Linux server connected 24x7. 
+<br>
+* **Good User Experience** Shango's graphical dashboard is the first of its kind and the interface is one of the better ones out there.
 
-I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else so this is just the same as outsourcing your node in the first place.
+##### Architectual and Conceptual benefits
 
-Moreover, the promise of LN is that we can do fast, Ubiquitous transfers and what is the point if you can only send funds but not receive funds whilst you are mobile? How is your friend going to pay you back for his share of dinner and how will you receive refunds for purchases?
-
-The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty. If fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable / decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
+* **Use the full potential of Lightning**. The promise of LN is that we can do fast, Ubiquitous transfers and without two-way transfers how will your friend pay you back for his share of dinner and how will you receive refunds for purchases? How will we ever bring every day smart-contracts into place without a server that continuously monitors those contracts to ensure execution at the right time?  
+<br>
+* **Pays you and helps the overall network.** The more people running a full LND node (and thus a full bitcoin node) the better it is for the network overall. So if fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable / decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
+<br>
+* **Ensures timely updates of software**. Right now, the entire LND team is hard at work adding bugfixes, security patches and performance optimisations daily. If you run a wallet that has a forked, modified version of LND to run on your phone it means that all new changes will take time to be ported to the mobile version maintained by the developer. This create un-necessary additional work and delays in getting you the user the latest and greatest version of LND the moment it comes out. This is especially useful when critical fixes take place. 
 
 #### 4.
 #### Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid? 
