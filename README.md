@@ -49,6 +49,9 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 [2. What security measures are in place when I use Shango Cloud Nodes? If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if Shango gets hacked?](#2)
 
+[3. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?](#3)
+
+[4. Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid?](#4)
 
 #### 1. 
 #### I'm scared of using cloud services for financial transactions. Cloud Servers are insecure. I FEAR change!!!! 
@@ -80,8 +83,8 @@ Shango is built around portable, stateless docker containers managed by the ECS 
 
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
 
-
-#### 3. Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
+#### 3.
+#### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
 I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. 
 
@@ -93,11 +96,12 @@ Moreover, the promise of LN is that we can do fast, Ubiquitous transfers and wha
 
 The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty. If fuzzy warm feelings are what you are after, you will also be glad to know that running a full node helps you earn a few pennies to route payments, makes the network more reliable / decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
 
-#### 4. Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid? I want my fiat paper money and abacus!
+#### 4.
+#### Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid? 
 
 True, keeping funds online and connected to the internet entails a fair amount of risk, even if it can be managed. Your funds are ultimately, like in any blockchain, only as secure as your private keys.
 
-That said, there are best practices you can adopt to reduce the risk. Just like keeping your money off crypto exchange hot wallets is a good idea it is also a good idea to keep the bulk of your funds ON-CHAIN in a paper wallet/cold storage unplugged from any technology. With a metal etched wallet http://bitcoinist.com/bitstashers-upgrade-paper-wallet-metal/  even an EMP or fire can't take out your key.
+That said, this is the Lightning Network and by design there is no way to run it offline. However, there are best practices you can adopt to reduce the risk. Just like keeping your money off crypto exchange hot wallets is a good idea it is also a good idea to keep the bulk of your funds ON-CHAIN in a paper wallet/cold storage unplugged from any technology. With a metal etched wallet http://bitcoinist.com/bitstashers-upgrade-paper-wallet-metal/  even an EMP or fire can't take out your key.
 
 Keep only funds for immediate and daily spending on your Lightning wallet and then move funds back and forth to your offline master wallet as needed. This way, even if you lose all your funds on your Lightning node, at least you are not broke.
 
