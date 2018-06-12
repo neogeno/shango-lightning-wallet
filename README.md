@@ -166,7 +166,7 @@ The next time you come back you get a fresh new node and start from a clean slat
 I can't make everyone happy. That is impossible. Instead, I shall quote this verse of our sacred scripture: 
 
 ## "If you don't believe it or don't get it, I don't have the time to try to convince you, sorry."
-##### - Satoshi Nakamoto
+#### - Satoshi Nakamoto
 
 
 
