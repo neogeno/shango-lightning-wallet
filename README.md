@@ -151,7 +151,7 @@ From your side you can :
 
 * Setting strong cipher passwords of course
 
-So one strategy might be that if you anticipate wanting to make large Lightning purchases or receive payments, you simply transfer what you need for the task at hand to your cloud node, spend it all or transfer it back to yourself, and then **terminate** your cloud node so all the data is gone.
+So one strategy might be that if you anticipate wanting to make large Lightning purchases or receive payments, you simply transfer what you need for the task at hand to your cloud node wallet, spend it all or transfer it back to your offline, hardware or other safe wallet, and then **terminate** your cloud node so all the data is gone.
 
 The next time you come back you get a fresh new node and start from a clean slate. You never have to use the same node twice. This I believe offers a high level of privacy and security for people who need it. 
 
