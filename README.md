@@ -63,8 +63,7 @@ As you can see, they are a ISO 9001, 27001, PCI DSS2, SOC 1, SOC 2, and SOC 3 HI
 
 I don't know about you but I personally don't have the time or resources to build industrial strength security into my own private Raspberry Pi node and if my money was truly at stake  I would much rather be trusting a professional service than myself any day. Not that AWS is unhackable, but the chances are far less and at the end of the day, if they get hacked you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing them for damages than trying to get back your funds you lost from your Windows PC because you forgot to change your password regularly. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
-#### 2.
-#### What security measures are in place when I use Shango Cloud Nodes? If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if Shango gets hacked?
+#### 2. What security measures are in place when I use Shango Cloud Nodes? If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if Shango gets hacked?
 
 Shango is built around portable, stateless docker containers managed by the ECS FARGATE service from AWS. This means that :
 
