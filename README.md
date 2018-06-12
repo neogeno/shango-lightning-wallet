@@ -110,7 +110,7 @@ Keep only funds for immediate and daily spending on your Lightning wallet and th
 #### 5.
 #### Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!
 
-Firstly, Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
+Firstly, as stated many times before, Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
 
 Not everyone can or wants to run their own full Lightning node though. So the AWS is the instant lightning-as-a-service option for the rest of us who just want to download an app and get it working right away.
 
@@ -122,7 +122,25 @@ That said, if you are doing something that you feel is controversial and may be 
 
 I believe choice and flexibility is the key to making this project work.
 
+#### 6.
+#### I trust AWS. I don't trust you. What can I do about this?
 
+Good. You **SHOULD NOT** trust some random dude on the Internet that you never met and whose true agenda is unknown. I wouldn't either.
+
+The point of Shango is that I have made every effort so you don't have to by:
+
+* Making it open source so you just trust the code, not the person
+* Using encryption on server and phone with a passphrase set by you. The approach should be to asssume a breach or a hack will take place, just make it useless when they succeed
+
+From your side you can :
+
+* Control what data and how much crypto you put on the cloud node in the first place by treating it as a ```disposable lightning node``` 
+
+* Setting strong cipher passwords of course
+
+So one strategy might be that if you every want to make Lightning purchases or receive payments, you simply transfer what you need for the task at hand to your cloud node, spend it all or transfer it back to yourself, and then **terminate** your cloud node so all the data is gone.
+
+The next time you come back you get a fresh new node and start from a clean slate. You never have to use the same node twice. This I believe offers a high level of privacy and security for people who need it. 
 
 
 
