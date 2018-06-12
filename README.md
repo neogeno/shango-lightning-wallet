@@ -57,6 +57,8 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 [6. I trust AWS. I don't trust you. What can I do about this?](#6)
 
+[7. I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me!](#7)
+
 #### 1. 
 #### I'm scared of using cloud services for financial transactions. Cloud Servers are insecure. I FEAR change!!!! 
 
