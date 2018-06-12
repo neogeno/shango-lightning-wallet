@@ -94,9 +94,9 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 #### 3.
 #### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-##### Functional Benefits
-
 Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets need to check the status of channels periodically in the background. By using the cloud, you get the following benefits:
+
+##### Functional Benefits
 
 * **Quick On-boarding**. I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
 
