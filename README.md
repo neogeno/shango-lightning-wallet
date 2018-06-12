@@ -159,7 +159,7 @@ So one strategy might be that if you anticipate wanting to make large Lightning 
 The next time you come back you get a fresh new node and start from a clean slate. You never have to use the same node twice. This I believe offers a high level of privacy and security for people who need it. 
 
 #### 7.
-#### I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me! I have abandonment issues!
+#### I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me! 
 
 I can't make everyone happy. That is impossible. Instead, I shall quote this verse of our sacred scripture: 
 
