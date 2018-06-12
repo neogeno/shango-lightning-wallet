@@ -53,29 +53,31 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 [4. Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid?](#4)
 
+[5. Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!](#5)
+
 #### 1. 
 #### I'm scared of using cloud services for financial transactions. Cloud Servers are insecure. I FEAR change!!!! 
 
-Chill. Before you run around screaming 'Custodial Wallet! Bad! Bad! Bad!',let us first discuss the long-standing myth and false notion that using cloud services is 'insecure'.
+Let us first discuss the long-standing myth and false notion that using cloud services is 'insecure'. Shango is backed by cloud infrastructure from Amazon Web Services (AWS) - the biggest and most reliable cloud partner on the planet trusted by Fortune 500 companies. According to these links here https://aws.amazon.com/compliance/iso-27001-faqs/ and https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-supports-container-workloads-regulated-by-iso-pci-soc-and-hipaa/ it looks like they have invested a lot into security.
 
-Shango is backed by cloud infrastructure from Amazon Web Services (AWS) - the biggest and most reliable cloud partner on the planet trusted by Fortune 500 companies. According to these links here https://aws.amazon.com/compliance/iso-27001-faqs/ and https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-supports-container-workloads-regulated-by-iso-pci-soc-and-hipaa/ it looks like they have invested a lot into security.
+As you can see, they are a ISO 9001, 27001, PCI DSS2, SOC 1, SOC 2, and SOC 3 HIPAA certified data centre for your node authorised to handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security and monitored 24x7 by a dedicated team. Do you actually think your own server is just as safe?
 
-As you can see, they are a ISO 9001, 27001, PCI DSS2, SOC 1, SOC 2, and SOC 3 HIPAA certified data centre for your node authorised to handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security and monitored 24x7 by a dedicated team. Do you think your own server is just as safe?
-
- This is in contrast to the false sense of security you get with your privately managed server at home or phone based wallet where you can lose power and data anytime, and has WIFI access to make it easily accessible by hackers outside your door and where any other software installed could be compromising your machine already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
+ This is in contrast to the false sense of security you get with your privately managed server at home or phone based wallet where you can lose power and data anytime, and has WIFI access to make it easily accessible by hackers outside your door and where any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
 
 I don't know about you but I personally don't have the time or resources to build industrial strength security into my own private Raspberry Pi node and if my money was truly at stake  I would much rather be trusting a professional service than myself any day. Not that AWS is unhackable, but the chances are far less and at the end of the day, if they get hacked you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing them for damages than trying to get back your funds you lost from your Windows PC because you forgot to change your password regularly. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
 #### 2. 
-#### What security measures are in place when I use Shango Cloud Nodes? If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What if Shango gets hacked?
+####  If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What security measures are in place when I use Shango Cloud Nodes?
+
+Chill. Before you run around screaming 'Custodial Wallet! Bad! Bad! Bad!', hear me out.
 
 Shango is built around portable, stateless docker containers managed by the ECS FARGATE service from AWS. This means that :
 
-- Nobody, not even myself has access to the underlying infrastructure of the nodes. i.e. There is no individual server you can setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time.
+- Nobody, not even myself has access to the underlying infrastructure of the nodes. i.e. There is no individual server for anyone to setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time. You can see your IP change almost every time you run Shango.
 
-- Once the node shuts down, all the data is lost forever so there is no trace of your private information
+- Once the node shuts down, there is no storage so all the data is lost forever so there is no trace of your private information
 
-- All the LND folders are (at the time of writing, this is still in development and pending the release of the new LND version 0.42) encrypted with a passphrase set by YOU. That means that even if someone did get access to the files, they would be unable to read them without your passphrase. 
+- All the LND folders are **encrypted** with a passphrase set by YOU. That means that even if someone did get access to the files, they would be unable to read them without your passphrase. 
 
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers, Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
@@ -105,6 +107,20 @@ That said, this is the Lightning Network and by design there is no way to run it
 
 Keep only funds for immediate and daily spending on your Lightning wallet and then move funds back and forth to your offline master wallet as needed. This way, even if you lose all your funds on your Lightning node, at least you are not broke.
 
+#### 5.
+#### Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!
+
+Firstly, Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
+
+Not everyone can or wants to run their own full Lightning node though. So the AWS is the instant lightning-as-a-service option for the rest of us who just want to download an app and get it working right away.
+
+Secondly,  Shango is not affiliated in any way with AWS. It's just the service chosen in terms of cost and reliability. It also happens to be the one I am most familiar with. 
+
+Whilst I don't know about Jeff Bezons' true intentions, AWS have publicly affirmed their support for blockchain technology https://aws.amazon.com/partners/blockchain/ and even launched a product template for it https://aws.amazon.com/blockchain/templates/ 
+
+That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your node and take it to any other hosting company like Digital Ocean or Upcloud or run it on your own server anytime you like. 
+
+I believe choice and flexibility is the key to making this project work.
 
 
 
