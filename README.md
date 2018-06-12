@@ -146,7 +146,7 @@ The point of Shango is that I have made every effort so you don't have to by:
 
 * Making it open source so you just trust the code, not the person
 * Using encryption on server and phone with a passphrase set by you. The approach should be to asssume a breach or a hack will take place, just make it useless when they succeed
-* Flexibility to host your own node instead of using the cloud, ability to export your node to another host at any time.
+* Giving you Flexibility to host your own node instead of using the cloud, and the ability to export your node to another host at any time at will.
 
 From your side you can also:
 
