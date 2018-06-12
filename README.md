@@ -123,7 +123,7 @@ That said, this is the Lightning Network and by design there is no way to run it
 Keep only funds for immediate and daily spending on your Lightning wallet and then move funds back and forth to your offline master wallet as needed. This way, even if you lose all your funds on your Lightning node, at least you are not broke.
 
 #### 5.
-#### Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!
+#### Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order! :) <grin>
 
 Firstly, as stated many times before, Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
 
