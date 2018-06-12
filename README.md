@@ -146,8 +146,9 @@ The point of Shango is that I have made every effort so you don't have to by:
 
 * Making it open source so you just trust the code, not the person
 * Using encryption on server and phone with a passphrase set by you. The approach should be to asssume a breach or a hack will take place, just make it useless when they succeed
+* Flexibility to host your own node instead of using the cloud, ability to export your node to another host at any time.
 
-From your side you can :
+From your side you can also:
 
 * Control what data and how much crypto you put on the cloud node in the first place by treating it as a ```disposable lightning node``` 
 
