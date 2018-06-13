@@ -94,7 +94,7 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 #### 3.
 #### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets need to check the status of channels periodically in the background and route the actual payment through other nodes. By using the cloud, you get the following benefits:
+Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets need to check the status of channels periodically in the background and route the actual payment through other nodes. By using Shango, you get the following benefits:
 
 ##### Functional Benefits
 
