@@ -98,7 +98,7 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 #### 3.
 #### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets need to check the status of channels periodically in the background and route the actual payment through other nodes. By using Shango, you get the following benefits:
+Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets are essentially mini 'servers' that need to check the status of channels periodically in the background and route the actual payment through other nodes. By using Shango, you get the following benefits:
 
 ##### Functional Benefits
 
@@ -112,7 +112,7 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty.
 
-* **Stability**. LND was written with a server running Linux in mind. It was not designed to run on a mobile device and the current wallets in the market try to shoehorn it into running on your phone. This will inevitably result in crashes, unexpected behaviour and will take a lot of effort before it comes close to the operation of LND running on a Linux server connected 24x7. 
+* **Stability**. LND was written with a server running Linux in mind. Call me crazy, but I don't think phones make very good servers. The current wallets in the market try to shoehorn LND into running on your phone. This will inevitably result in crashes, unexpected behaviour and will take a lot of effort before it comes close to the operation and stability of LND running on a Linux server connected 24x7. 
 
 * **Good User Experience** Shango's graphical dashboard is the first of its kind and the interface is one of the better ones out there.
 
@@ -165,7 +165,7 @@ From your side you can also:
 
 * Setting strong cipher passwords of course
 
-So one strategy might be that if you anticipate wanting to make large Lightning purchases or receive payments, you simply transfer what you need for the task at hand to your cloud node wallet. Once done, you either spend it all or transfer remaining funds back to your offline, hardware or other safe wallet, and then **terminate** your cloud node so all the data is gone.
+So one strategy might be that if you anticipate wanting to make large Lightning purchases or receive payments, you simply transfer what you need for the task at hand to your cloud node wallet. Once done, you either spend it all or transfer remaining funds back to your offline, on-chain hardware or other safe wallet, and then **terminate** your cloud node so all the data is gone.
 
 The next time you come back you get a fresh new node and start from a clean slate. You never have to use the same node twice. This I believe offers a high level of privacy and security for people who need it. 
 
