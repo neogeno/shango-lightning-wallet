@@ -108,7 +108,7 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 * **Send and Receive payments**. Shango can send and receive payments with no additional software. Due to security reasons, most wallets will not allow you to receive payments on your phone. If they do, they do it by having additional layers of servers in between to accomplish this and this means they are no longer running a pure LND server and have their own code added to it.
 
-* **Better security of funds**. Your own node or Shango cloud nodes **can be** online all the time, mobile wallets are not and you don't want your phone and funds to go down the toilet, literally. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time. I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else/ another server so this is just the same as outsourcing your node in the first place. 
+* **Better security of funds**. Your own node or Shango cloud nodes **can be** online all the time, mobile wallets are not and you don't want your phone and funds to go down the toilet, literally. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state you may lose money because your phone's node is off-line most of the time and won't notice. I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else/ another server so this is just the same as outsourcing your node in the first place. 
 
 The Shango Cloud Node or your own Privately hosted node can be called upon 24x7 and will always stay on-line to catch such cheaters in the act and give you all the money as a penalty.
 
@@ -144,7 +144,7 @@ Secondly,  Shango is not affiliated in any way with AWS. It's just the service c
 
 Whilst I don't know about Jeff Bezons' true intentions, AWS have publicly affirmed their support for blockchain technology https://aws.amazon.com/partners/blockchain/ and even launched a product template for it https://aws.amazon.com/blockchain/templates/ 
 
-That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your node and take it to any other hosting company like Digital Ocean or Upcloud or run it on your own server anytime you like. 
+That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your node to go elsewhere, or of course running your own private node on a secured server.
 
 I believe choice and flexibility is the key to making this project work.
 
