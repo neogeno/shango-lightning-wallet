@@ -1,6 +1,19 @@
 # Shango - Lightning Wallet for iOS and Android
 
-## Quick Start
+## Quick Start if you have an Existing LND Node running
+
+#### 1. Install App
+Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+
+Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
+
+* iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
+* Google Play Beta : https://support.google.com/googleplay/answer/7003180?hl=en 
+
+#### 2. Connect your node via GRPC
+Goto Settings -> Switch LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
+
+## Quick Start for Cloud Nodes
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
