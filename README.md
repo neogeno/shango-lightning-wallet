@@ -13,7 +13,7 @@ Invites will be sent in batches so you may need to wait a few days for your invi
 #### 2. Connect your node via GRPC
 Goto Settings -> Switch LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
 
-## Quick Start for Cloud Nodes
+## Quick Start for the rest of us
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
