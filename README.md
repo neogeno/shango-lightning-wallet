@@ -28,8 +28,8 @@ However, you may wish to expand beyond what autopilot does by fine tuning whom y
 
 Your goal is to get as 'well connected' as you can, as soon as possible so that you have the highest possible chance of routing payments to/from your node. If you need some ideas on which nodes to connect to, use one of these LN explorers:
 
-https://1ml.com/testnet/
-https://explorer.acinq.co/
+1ML : https://1ml.com/testnet/
+ACINQ: https://explorer.acinq.co/
 
 
 #### 5. Spend away!
