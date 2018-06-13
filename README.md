@@ -102,7 +102,7 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 ##### Functional Benefits
 
-* **Quick On-boarding**. I believe there is a better alternative to running a half-disabled node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
+* **Quick On-boarding**. I believe there is a better alternative to running a limited version of a node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
 
 * **Multiple Device Access**. Whether you run your own node or use the AWS Cloud node, you can install Shango on multiple devices and access your node to make payments from anywhere at home, work or on the go. If your phone gets run over by a monster truck, just pickup another device and continue like nothing happened.
 
