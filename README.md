@@ -117,7 +117,7 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 * **Quick On-boarding**. I believe there is a better alternative to running a limited version of a node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
 
-* **Multiple Devices, One Wallet **. Whether you run your own node or use the AWS Cloud node, you can install Shango on multiple devices and access your node to make payments from anywhere at home, work or on the go. If your phone gets run over by a monster truck, just pickup another device and continue like nothing happened. You don't need a different wallet on your phone, tablet and PC.
+* **Multiple Devices, One Wallet **. Whether you run your own node or use the AWS Cloud node, you can install Shango on multiple devices and access your node to make payments from anywhere at home, work or on the go. If your phone gets run over by a monster truck, just pickup another device and continue like nothing happened. You don't need a seperate wallet on your phone, tablet and PC.
 
 * **Send and Receive payments**. Shango can send and receive payments with no additional software. Due to security reasons, most wallets will not allow you to receive payments on your phone. If they do, they do it by having additional layers of servers in between to accomplish this and this means they are no longer running a pure LND server and have their own code added to it.
 
