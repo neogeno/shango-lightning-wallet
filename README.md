@@ -26,7 +26,11 @@ Wait for Channels to open and have the **'Active'** badge near the right. By def
 
 However, you may wish to expand beyond what autopilot does by fine tuning whom you open channels with. For example, if you are testing regularly with a specific crypto exchange, merchant or friend it may be advisable to manually open a channel with them. Try to select counterparties which already have a lot of channels open with others, and remember to set amounts in both directions e.g. have half the balance on your local side and the other half on the remote side. This allows value to move both ways along the channel.
 
-Your goal is to get as 'well connected' as you can, as soon as possible so that you have the highest possible chance of routing payments to/from your node.
+Your goal is to get as 'well connected' as you can, as soon as possible so that you have the highest possible chance of routing payments to/from your node. If you need some ideas on which nodes to connect to, use one of these LN explorers:
+
+https://1ml.com/testnet/
+https://explorer.acinq.co/
+
 
 #### 5. Spend away!
 Try sending an instant Lightning payment to one of the following demo stores:
