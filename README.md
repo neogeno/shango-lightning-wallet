@@ -13,6 +13,8 @@ Invites will be sent in batches so you may need to wait a few days for your invi
 #### 2. Connect your node via GRPC
 Goto Settings -> Switch LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
 
+Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
+
 ## Quick Start for the rest of us
 
 #### 1. Install App
