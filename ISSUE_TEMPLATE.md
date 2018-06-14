@@ -1,4 +1,4 @@
-Thank you for trying out Shango Beta.  Issue tracker is **ONLY** used for reporting bugs. NO NEW FEATURE ACCEPTED! Use [stackoverflow](https://stackoverflow.com) for supporting issues. 
+Thank you for trying out Shango Beta.   
 
 Please submit your issues with the following information
 
