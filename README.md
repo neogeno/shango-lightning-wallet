@@ -81,7 +81,7 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
 
-Here are the points to consider:
+Here are the points why we chose to use the cloud for the back-end:
 
 - AWS is more secure than your own PC. There is a prevailing myth that cloud services are 'insecure'. However, from my research and experience, AWS have invested a lot into security and promoting block chain technology according to the links below, making it the first certified choice used by Fortune 500 companies who handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
 
