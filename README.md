@@ -72,22 +72,31 @@ For Starblocks, the best node to manually open a channel to is this endurance no
 
 [4. Leaving a server on all day sounds risky to me. Isn't this a hot wallet that we were told to avoid?](#4)
 
-[5. Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order!](#5)
+[5. I trust AWS. I don't trust you. What can I do about this?](#6)
 
-[6. I trust AWS. I don't trust you. What can I do about this?](#6)
-
-[7. I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me!](#7)
+[6. I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me!](#7)
 
 #### 1. 
-#### I'm scared of using cloud services for financial transactions. Cloud Servers are insecure. (I FEAR change!!!! )
+#### I'm scared of using AWS cloud services for financial transactions. Cloud Servers are insecure. (I FEAR change!!!! )
 
-There is a myth that using cloud services is 'insecure'. Shango is built on AWS which according to  https://aws.amazon.com/compliance/iso-27001-faqs/ and https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-supports-container-workloads-regulated-by-iso-pci-soc-and-hipaa/ have invested a lot into security.
+Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
 
-AWS has numerous certifications authorising it to handle the most sensitive data including healthcare and financial information of Fortune 500 companies. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
+Here are the points to consider:
 
-This is in contrast to the false sense of security you get with your privately managed server at home or phone based wallet where you can lose power and data anytime, and has WIFI access to make it easily accessible by hackers outside your door and where any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
+- AWS is more secure than your own PC. There is a prevailing myth that cloud services are 'insecure'. However, from my research and experience, AWS have invested a lot into security and promoting block chain technology according to the links below, making it the first certified choice used by Fortune 500 companies who handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
 
-Not that AWS is unhackable, but the chances are far less. At the end of the day, if they get hacked you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing them for damages than trying to get back your funds you lost from your Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+- Your own home is not a datacenter. Running your own node gives you a false sense of security when in reality you can be more easily a victim of social engineering, lose power and data anytime on your devices, have multiple people with access to you WIFI access making it an easier target for hackers outside your door. Most devices also don't just run LND, so any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
+
+- There is no 100% fool proof solution. AWS is NOT unhackable, but the chances are far less and at least you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing AWS for hacking damages than trying to get back your funds you lost from your Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+
+That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server.
+
+Links:
+- https://aws.amazon.com/compliance/iso-27001-faqs/
+- https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-supports-container-workloads-regulated-by-iso-pci-soc-and-hipaa/
+- https://aws.amazon.com/partners/blockchain/
+- https://aws.amazon.com/blockchain/templates/
+
 
 #### 2. 
 ####  If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What security measures are in place when I use Shango Cloud Nodes?
@@ -142,22 +151,9 @@ That said, this is the Lightning Network and by design there is no way to run it
 
 Keep only funds for immediate and daily spending on your Lightning wallet and then move funds back and forth to your offline master wallet as needed. This way, even if you lose all your funds on your Lightning node, at least you are not broke.
 
-#### 5.
-#### Shango is running on Amazon. I don't like AWS. The Government can force them to shutdown my node. Besides, Jeff Bezos is part of the illuminati and the secret world order! :) <grin>
-
-Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND server that you setup yourself so the AWS node is **optional**. 
-
-Not everyone can or wants to run their own full Lightning node though. So the AWS is the instant lightning-as-a-service option for the rest of us who just want to download an app and get it working right away.
-
-Shango is not affiliated in any way with AWS. It's just the service chosen in terms of cost and reliability. It also happens to be the one I am most familiar with. 
-
-Whilst I don't know about Jeff Bezons' true intentions, AWS have publicly affirmed their support for blockchain technology https://aws.amazon.com/partners/blockchain/ and even launched a product template for it https://aws.amazon.com/blockchain/templates/ 
-
-That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your node to go elsewhere, or of course running your own private node on a secured server.
-
 I believe choice and flexibility is the key to making this project work.
 
-#### 6.
+#### 5.
 #### I trust AWS. I don't trust you. What can I do about this?
 
 Good. You **SHOULD NOT** trust some random dude on the Internet that you never met and whose true agenda is unknown. I wouldn't either.
@@ -178,7 +174,7 @@ So one strategy might be that if you anticipate wanting to make large Lightning 
 
 The next time you come back you get a fresh new node and start from a clean slate. You never have to use the same node twice. This I believe offers a high level of privacy and security for people who need it. 
 
-#### 7.
+#### 6.
 #### I am still dubious. This is a scam to get my testnet coins and publicly available email address. Everybody is out to get me! 
 
 I can't make everyone happy. That is impossible. Instead, I shall quote this verse of our sacred scripture: 
