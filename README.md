@@ -83,11 +83,11 @@ Shango allows you to connect to your own Raspberry Pi, PC, Linux or Mac LND serv
 
 Here are the points why we chose to use the cloud for the back-end:
 
-- AWS is more secure than your own PC. There is a prevailing myth that cloud services are 'insecure'. However, from my research and experience, AWS have invested a lot into security and promoting block chain technology according to the links below, making it the first certified choice used by Fortune 500 companies who handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
+- **AWS is more secure than on premise servers.** There is a prevailing myth that cloud services are 'insecure'. However, from my research and experience, AWS have invested a lot into security and promoting block chain technology according to the links below, making an internationally certified choice used by Fortune 500 companies who handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
 
-- Your own home is not a datacenter. Running your own node gives you a false sense of security when in reality you can be more easily a victim of social engineering, lose power and data anytime on your devices, have multiple people with access to your WIFI making it an easier target for hackers outside your door. Most devices also don't just run LND, so any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
+- **Your own home is not a datacenter.** Running your own node may give you a false sense of security when in reality you can be more easily a victim of social engineering, loss of power and data anytime on your device and suffer intrusions via your WIFI. Most of your devices also aren't security hardended and don't just run LND, so any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
 
-- There is no 100% fool proof solution. AWS is NOT unhackable, but the chances are far less and at least you will be in the same boat as giants like Verizon, Netflix, Comcast etc and you have a much better case suing AWS for hacking damages than trying to get back your funds you lost from your Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+- **There is no 100% perfect solution.** AWS is NOT unhackable, cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with AWS, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing AWS for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
 That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server.
 
@@ -101,9 +101,9 @@ Links:
 #### 2. 
 ####  If Shango is running all the nodes, doesn't that mean you can see all my private keys / access macaroons and get all my funds when you want? What security measures are in place when I use Shango Cloud Nodes?
 
-Shango is not a custodial wallet, because even if the data is in the cloud, nobody can see your private keys except you. 
+Shango is not a custodial wallet, because even if the data is in the cloud, nobody can see your private keys except you and you control them.
 
-- Shango is built with stateless docker containers managed by the ECS FARGATE service from AWS. Nobody outside of AWS, has access to the underlying infrastructure of the nodes. i.e. There is no individual server for anyone to setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time. You can see your IP change almost every time you run Shango.
+- Shango is built with stateless docker containers managed by the ECS FARGATE service from AWS. Nobody outside of AWS's technical team, has access to the underlying infrastructure of the nodes. i.e. There is no individual server for anyone to setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time. You can see your IP change almost every time you run Shango.
 
 - Once the node shuts down, there is no storage so all the data is lost forever so there is no trace of your private information
 
@@ -156,7 +156,7 @@ Keep only funds for immediate and daily spending on your Lightning wallet and th
 I believe choice and flexibility is the key to making this project work.
 
 #### 5.
-#### I trust AWS. I don't trust you. What can I do about this?
+#### I can maybe trust AWS. I don't trust you. What can I do about this?
 
 Good. You **SHOULD NOT** trust some random dude on the Internet that you never met and whose true agenda is unknown. I wouldn't either.
 
