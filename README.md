@@ -1,6 +1,6 @@
 # Shango - Lightning Wallet for iOS and Android
 
-## Quick Start if you want to run Shango on your own LND Node
+## Quick Start if you want to run Shango with your own LND Node (Main Net or Testnet)
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
@@ -8,14 +8,14 @@ Install the Shango app from Google Play or iTunes App Store. As of now I am runn
 Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
 
 * iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : https://support.google.com/googleplay/answer/7003180?hl=en 
+* Google Play Beta : Read https://support.google.com/googleplay/answer/7003180?hl=en then visit https://play.google.com/apps/testing/com.shango
 
 #### 2. Connect your node via GRPC
 Goto Settings -> Switch LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
 
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
-## Quick Start for the rest of us
+## Quick Start for the rest of us (Testnet Only for now)
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
@@ -23,7 +23,7 @@ Install the Shango app from Google Play or iTunes App Store. As of now I am runn
 Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
 
 * iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : https://support.google.com/googleplay/answer/7003180?hl=en 
+* Google Play Beta : Read https://support.google.com/googleplay/answer/7003180?hl=en then visit https://play.google.com/apps/testing/com.shango
 
 #### 2. Check your node is ready
 The first time you connect to the Shango service, you will be assigned a pre-warmed, **full** LND Lightning node that is already pre-synced to the Bitcoin **testnet** blockchain and ready to use. If you get a warning that your chain is not synced or that there are no peers online yet, it is probably because the cloud service is experiencing high traffic at the moment so just wait until the chain is synced and you see the synched up icon on your dashboard as below. Check that you have at least one peer connected in the dashboard before continuing.
@@ -85,11 +85,13 @@ Here are the points why we chose to use the cloud for the back-end:
 
 - **AWS is more secure than on premise servers.** There is a prevailing myth that cloud services are 'insecure'. However, from my research and experience, AWS have invested a lot into security and even promoting block chain technology according to the links below, making it an internationally certified choice used by Fortune 500 companies who handle the most sensitive data including healthcare and financial information. These are industrial strength facilities with fire suppression, tight physical security, multi site redundancies and monitored 24x7 by a dedicated team. Do you actually think your own server or phone is just as safe?
 
-- **Your own home is not a datacenter.** Running your own node may give you a false sense of security when in reality you can be more easily a victim of social engineering, loss of power and data anytime on your device and suffer intrusions via your WIFI. Most of your devices also aren't security hardended and don't just run LND, so any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
+- **Your home is not a datacenter.** Running your own node may give you a false sense of security and censorship resistance when in reality your local ISP and telecom providers will shut down your service if the law requires them to do so. Moreover, you can more easily be a victim of social engineering, loss of battery power and data anytime on your device and suffer intrusions via your WIFI. Most of your devices also aren't security hardended and don't just run LND, so any other software installed could be compromising your machine/device already without you knowing. Granted if you are a security expert you can do a lot to prevent casual hacks but not all of us can or want to do this.
 
-- **There is no 100% perfect solution.** AWS is NOT unhackable, cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with AWS, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing AWS for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+- **High Availability worldwide** Apart from the obvious benefit of being able to keep your node up and access it when you travel, we found that most of the 2 billion unbanked population reside in developing countries, where their local power and communications infrastructure is unstable and where the government has a strong hand in all central services. Relying on a local server or phone node to conduct transactions would not be reliable or even legal in most cases.
 
-That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server.
+- **There is no 100% perfect solution.** AWS is NOT unhackable, centralised cloud providers and for that matter, your local ISP/Telecom provider is not 100% censorship resistant and cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with a global cloud provider, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing them for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+
+That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server managed by you.
 
 Links:
 - https://aws.amazon.com/compliance/iso-27001-faqs/
@@ -126,11 +128,11 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 * **Quick On-boarding**. I believe there is a better alternative to running a limited version of a node on your phone that takes almost half an hour to get the synchronisation ready before you can start using it. Shango lets you use LND now without waiting by spinning up a ready to use, blockchain synchronised LND node with connected peers the moment you download the app.
 
-* **Multiple Devices, One Wallet**. Whether you run your own node or use the AWS Cloud node, you can install Shango on multiple devices and access your node to make payments from anywhere at home, work or on the go. If your phone gets run over by a monster truck, just pickup another device and continue like nothing happened. Why maintain a seperate node and wallet on your phone, tablet and PC?
+* **Multiple Devices, One Wallet**. Whether you run your own node or use the AWS Cloud node, you can install Shango on multiple devices and access your node to make payments from anywhere at home, work or overseas. Most people have enough difficulty keeping track of their savings and current account already, why maintain a seperate node and individual wallet on your phone, tablet and PC in addition to that?
 
 * **Send and Receive payments**. Shango can send and receive payments with no additional software. Due to security reasons, most wallets will not allow you to receive payments on your phone. If they do, they do it by having additional layers of servers in between to accomplish this and this means they are no longer running a pure LND server and have their own code added to it.
 
-* **Better security of funds**. Your own node or Shango cloud nodes **can be** online all the time, mobile wallets are not and you don't want your phone and funds to go down the toilet, literally. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and force close based on a previous state, their version is what gets broadcasted to the blockchain and you may lose money. Since your phone's node is off-line most of the time it won't notice. I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else/ another server so this is just the same as outsourcing your node in the first place. You need something like the Shango Cloud Node or your own Privately hosted node which can be called upon 24x7 and will always stay on-line to catch such cheaters in the act.
+* **Better security of funds**. Your own node or Shango cloud nodes **can be** online all the time, mobile wallets are not especially if you live in a country with unstable power and limited cell phone coverage. The way the Lightning Network works, if you open a channel to someone and they decide to get naughty and  broadcast their version of your balance to the blockchain you may lose money. Since your phone's node is off-line most of the time it won't notice. I know there are other proposed solutions like Watchtowers (https://www.coindesk.com/laolu-building-watchtower-fight-bitcoin-lightning-fraud/) but  this is not ready now and we have no idea if and when this concept will be popular. Ultimately, this still goes back to outsourcing your security to someone else/ another server so this is just the same as outsourcing your node in the first place. You need something like the Shango Cloud Node or your own Privately hosted node which can be called upon 24x7 and will always stay on-line to catch such cheaters in the act.
 
 * **Stability**. LND was written with a server running Linux in mind. Call me crazy, but I don't think phones make very good servers. The current wallets in the market try to shoehorn LND into running on your phone. This will inevitably result in crashes, unexpected behaviour and will take a lot of effort before it comes close to the operation and stability of LND running on a Linux server connected 24x7. 
 
