@@ -50,17 +50,36 @@ ACINQ: https://explorer.acinq.co/
 #### 5. Spend away!
 Try sending an instant Lightning payment to one of the following demo stores:
 
-* https://starblocks.acinq.co/#/
+* https://starblocks.acinq.co/#/ (may need to open channel to endurance node below)
 * https://yalls.org/
 * https://lncast.com/
-* http://satoshis.place
+* https://testnet.satoshis.place/
 
 
 Note: Whilst opening a channel directly to the above sites is optional, it may help you get transfers done faster and save a few Satoshis in fees. 
 
-For Starblocks, the best node to manually open a channel to is this endurance node: 
-```03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134@34.250.234.192:9735```
+For those who love to be connected, these are highly-connected nodes, so you should be able to pay anywhere once you make a connection to at least one of them.
+```
+htlc.me03193d512b010997885b232ecd6b300917e5288de8785d6d9f619a8952728c78e8@18.205.112.169:9735
 
+yalls.org02212d3ec887188b284dbb7b2e6eb40629a6e14fb049673f22d2a0aa05f902090e@testnet-lnd.yalls.org
+
+faucet.lightning.community 0270685ca81a8e4d4d01beec5781f4cc924684072ae52c507f8ebe9daf0caaab7b@159.203.125.125:9735
+
+btctest.lnetwork.tokyo 023ea0a53af875580899da0ab0a21455d9c19160c4ea1b7774c9d4be6810b02d2c@160.16.233.215:9735
+
+https://lightning-test.tom.place024c4a95dd7075c70ad36cb5f2de5e17dc99fd5fba9c402420b0af6abbd0137f4f@213.144.130.35:9735
+
+http://lnd.fun0354d21c34f65c3429eedcef9e871a7286013ad5b27722a02752e29a4a888b0e62@lnd.fun:9735
+
+aranguren.org038863cf8ab91046230f561cd5b386cbff8309fa02e3f0c3ed161a3aeb64a643b9@180.181.208.42:9735
+
+lnplays.com02cdb6c06c0e1362212ab135993f4a92e0b8f85803d62c87df3644340ecab83990@lnplays.com:9735
+
+endurance 03933884aaf1d6b108397e5efe5c86bcf2d8ca8d2f700eda99db9214fc2712b134@34.250.234.192:9735
+
+nanoparticle.space 0269a94e8b32c005e4336bfb743c08a6e9beb13d940d57c479d95c8e687ccbdb9f@197.155.6.38:9735
+```
 
 ## FAQ
 
