@@ -15,7 +15,7 @@ Goto Settings -> Connect to your LND Server -> Show Instructions and follow the 
 
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
-## Quick Start for the rest of us (Testnet Only for now)
+## Quick Start for the rest of us (Testnet Cloud Node Only for now)
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
