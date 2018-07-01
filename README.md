@@ -11,7 +11,7 @@ Invites will be sent in batches so you may need to wait a few days for your invi
 * Google Play Beta : Read https://support.google.com/googleplay/answer/7003180?hl=en then visit https://play.google.com/apps/testing/com.shango
 
 #### 2. Connect your node via GRPC
-Goto Settings -> Switch LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
+Goto Settings -> Connect to your LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
 
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
