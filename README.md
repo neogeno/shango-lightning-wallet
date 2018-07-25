@@ -11,8 +11,28 @@ Invites will be sent in batches so you may need to wait a few days for your invi
 * Google Play Beta : Read https://support.google.com/googleplay/answer/7003180?hl=en then visit https://play.google.com/apps/testing/com.shango
 
 #### 2. Connect your node via GRPC
-Goto Settings -> Connect to your LND Server -> Show Instructions and follow the commands you need to enter via SSH to your node
 
+For access to your node from outside your home network, firstly make sure that the following settings are enabled on your node:
+
+* Log into the router connected to your node, and add a port forward rule for 10009 to go to your node
+* Add the following lines to your LND conf file, using $ sudo nano /home/<username>/.lnd/lnd.conf:
+    rpclisten=0.0.0.0:10009
+    tlsextraip=<your node's external ip>
+    externalip=<your node's external ip>
+* Add a new uncomplicated firewall rule, using $ allow sudo ufw allow 10009 comment 'allow LND grpc from public internet'
+* Enable the new uncomplicated firewall rule, using $ sudo ufw enable  
+* Delete any tls.cert and tls.key files, using $ cd /home/<username>/.lnd and then $ sudo rm tls.cert tls.key
+* Restart the node using $ sudo shutdown -r now
+* When it has restarted, it will automatically add new tls files using the information from the LND conf file
+* If needed, copy the tls files to other users, using $ sudo cp /home/<username 1>/.lnd/tls.cert /home/<username 2>/.lnd
+
+Your node should now be set up to connect to Shango. The next step is to send over the permission files:
+
+* Install QR Encoder, using $ sudo apt-get install qrencode
+* Move to the directory with LND, using $ cd /home/<username>/.lnd 
+* Generate a QR code, using $ echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 admin.macaroon)," > qr.txt && cat tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
+* On the Shango App, go to 'Settings' -> 'Connect to your LND Server', and scan the QR code provided
+ 
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
 ## Quick Start for the rest of us (Testnet Cloud Node Only for now)
