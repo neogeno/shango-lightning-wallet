@@ -168,7 +168,7 @@ Finally, if the above still hasn't convinced you, you can always use the Remote 
 #### 3.
 #### Why is Shango better than other Lightning wallets that just run on my phone? Why bother with this cloud stuff anyway?
 
-Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets are essentially mini 'servers' that need to check the status of channels periodically in the background and route the actual payment through other nodes. By using Shango, you get the following benefits:
+Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallets are essentially mini 'servers' that need to be online all the time to check the status of channels periodically in the background and route the actual payment through other nodes. By using Shango, you get the following benefits:
 
 ##### Functional Benefits
 
@@ -186,7 +186,7 @@ Lightning Wallets are different from regular Bitcoin on-chain wallets. LN wallet
 
 ##### Architectual and Conceptual benefits
 
-* **Allows you to earn routing fees.** Only if you are in control of a full node, can you act as a gateway routing node for other users. Users with sufficient liquidity and who are the most connected across the network can then earn fees for routing payments for others.
+* **Allows you to earn routing fees.** Only if you are in control of a full node, can you act as a gateway routing node and earn fees for forwarding payments on behalf of other users. Users with sufficient liquidity and who are the most connected and reliable across the network can eventually become a major hubs for payments which will be saught out by algorithms like the Autopilot function of LND.
 
 * **Helps the overall network.** The more people running a full LND node (and thus a full bitcoin node) the better it is for the network overall. So if fuzzy warm feelings are what you are after, you will also be glad to know that running a full node  makes the network more reliable / decentralised unlike the leeching of resources that happens when you use a on/off mobile wallet. Cloud nodes is and should be the preferred solution at this moment in time.
 
