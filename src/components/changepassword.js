@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import {extendObservable, ObservableMap, observable, trace} from 'mobx';
+import { ObservableMap} from 'mobx';
 import {
   View,
-  TouchableOpacity,
-  Clipboard,
   Keyboard,
   Alert
 } from 'react-native';
 import {Overlay, Button, Text, Card, Input, CheckBox} from 'react-native-elements';
-import styles from '../screens/styles';
 import store from '../store';
 import Modal from "react-native-modal";
 import Spinner from 'react-native-spinkit';

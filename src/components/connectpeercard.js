@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import {extendObservable, ObservableMap, observable, trace} from 'mobx';
+import {ObservableMap} from 'mobx';
 import {
   View,
-  TouchableOpacity,
-  Clipboard,
   Keyboard
 } from 'react-native';
 import {Overlay, Button, Text, Card, Input} from 'react-native-elements';

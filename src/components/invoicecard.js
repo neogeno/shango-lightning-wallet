@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 import { observer } from 'mobx-react';
 import {extendObservable, ObservableMap} from 'mobx';
 import {
-  TextInput,
   View,
-  ScrollView,
-  Alert,
-  KeyboardAvoidingView,
   TouchableOpacity,
-  ActivityIndicator,
   Clipboard,
   Keyboard
 } from 'react-native';
