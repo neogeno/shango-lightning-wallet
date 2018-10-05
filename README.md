@@ -15,26 +15,29 @@ Invites will be sent in batches so you may need to wait a few days for your invi
 For access to your node from outside your home network, firstly make sure that the following settings are enabled on your node:
 
 * Log into the router connected to your node, and add a port forward rule for 10009 to go to your node
-* Add the following lines to your LND conf file, using ```$ sudo nano ~/.lnd/lnd.conf```:
+* Add the following lines to your LND conf file, using ``` sudo nano ~/.lnd/lnd.conf```:
 ```
     rpclisten=0.0.0.0:10009
     tlsextraip=<your node's external ip>
     externalip=<your node's external ip>
 ```
-* Add a new uncomplicated firewall rule, using ```$ allow sudo ufw allow 10009 comment 'allow LND grpc from public internet'```
-* Enable the new uncomplicated firewall rule, using ```$ sudo ufw enable```  
-* Delete any tls.cert and tls.key files, using ```$ cd ~/.lnd``` and then ```$ sudo rm tls.cert tls.key```
-* Restart the node using by running lnd again or ```$ sudo shutdown -r now```
+* Add a new uncomplicated firewall rule, using ``` allow sudo ufw allow 10009 comment 'allow LND grpc from public internet'```
+* Enable the new uncomplicated firewall rule, using ``` sudo ufw enable```  
+* Delete any tls.cert and tls.key files, using ``` cd ~/.lnd``` and then ``` sudo rm tls.cert tls.key```
+* Restart the node using by running lnd again or ``` sudo shutdown -r now```
 * When it has restarted, it will automatically add new tls files using the information from the LND conf file
-* If needed, copy the tls files to other users, using ```$ sudo cp /home/<username 1>/.lnd/tls.cert /home/<username 2>/.lnd```
+* If needed, copy the tls files to other users, using ``` sudo cp /home/<username 1>/.lnd/tls.cert /home/<username 2>/.lnd```
 
 Your node should now be set up to connect to Shango. The next step is to send over the permission files:
 
-* Install QR Encoder, using ```$ sudo apt-get install qrencode```
-* Move to the directory with LND, using ```$ cd /home/<username>/.lnd``` 
+* Install QR Encoder, using ``` sudo apt-get install qrencode```
+* Move to the directory with LND, using ``` cd /home/<username>/.lnd``` 
+* If you are using a Testnet node, type ``` export NETWORK=testnet ```
+* If you are using a Main Net node, type ``` export NETWORK=mainnet ```
 * Generate a QR code, using 
 ```
-$ echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 admin.macaroon)," > qr.txt && cat tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
+export NETWORK=
+ echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && cat ~/.lnd/tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
 * On the Shango App, go to 'Settings' -> 'Connect to your LND Server', and scan the QR code provided
  
@@ -133,7 +136,7 @@ Here are the points why we chose to use the cloud for the back-end:
 
 - **High Availability worldwide** Apart from the obvious benefit of being able to keep your node up and access it 24x7 when you travel, we found that most of the 2 billion unbanked population reside in developing countries, where their local power and communications infrastructure is unstable and where the government has a strong hand in all central services. Relying on a local server or phone node to conduct transactions would not be reliable or even legal in most cases. 
 
-- **There is no 100% perfect solution.** AWS is NOT unhackable, centralised cloud providers and for that matter, your local ISP/Telecom provider is not 100% censorship resistant and cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with a global cloud provider, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing them for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+- **There is no 100% perfect solution.** AWS is NOT unhackable, centralised cloud providers and for that matter, your local ISP/Telecom provider is not 100% censorship resistant and cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with a global cloud provider, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing them for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
 That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server managed by you.
 
