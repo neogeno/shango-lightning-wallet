@@ -36,7 +36,6 @@ Your node should now be set up to connect to Shango. The next step is to send ov
 * If you are using a Main Net node, type ``` export NETWORK=mainnet ```
 * Generate a QR code, using 
 ```
-export NETWORK=
  echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && cat ~/.lnd/tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
 * On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
