@@ -39,7 +39,7 @@ Your node should now be set up to connect to Shango. The next step is to send ov
 export NETWORK=
  echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && cat ~/.lnd/tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
-* On the Shango App, go to 'Settings' -> 'Connect to your LND Server', and scan the QR code provided
+* On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
  
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
