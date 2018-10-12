@@ -46,12 +46,10 @@ Your node should now be set up to connect to Shango. The next step is to send ov
 ## Quick Start for the rest of us (Testnet Cloud Node Only for now)
 
 #### 1. Install App
-Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
 
-Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
-
-* iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango on your device after you receive a confirmation email that you have been added to the beta list
+* iOS Test Flight : https://testflight.apple.com/join/WwCjFnS8
+* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device to opt-in to Google Beta Store testing.
 
 #### 2. Check your node is ready
 The first time you connect to the Shango service, you will be assigned a pre-warmed, **full** LND Lightning node that can earn fees, and that is already pre-synced to the Bitcoin **testnet** blockchain and ready to use. If you get a warning that your chain is not synced or that there are no peers online yet, it is probably because the cloud service is experiencing high traffic at the moment so just wait until the chain is synced and you see the synched up icon on your dashboard as below. Check that you have at least one peer connected in the dashboard before continuing.
@@ -165,7 +163,7 @@ Before you run around yelling 'Custodian Wallet! Bad! Bad!' because you heard th
 
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers (check AWS forums if you don't believe me) Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original **base** docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
-- Shango is released as open source software (Code will be uploaded after public beta starts). So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see.
+- Shango is released as open source software (Code will be uploaded after public beta starts). So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see. In fact, since Shango was built using React Native and written in ECMAScript executed at runtime, **the plain text source code is also present in every app file** for your to inspect which you can easily compare to the source code repository to ensure that what you see is what you get.
 
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
 
