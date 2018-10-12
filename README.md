@@ -3,12 +3,10 @@
 ## Quick Start if you want to run Shango with your own LND Node (Main Net or Testnet)
 
 #### 1. Install App
-Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only private BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
 
-Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
-
-* iOS Test Flight : Read https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device after you get a confirmation email
+* iOS Test Flight : https://testflight.apple.com/join/WwCjFnS8
+* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device to opt-in to Google Beta Store testing.
 
 #### 2. Connect your node via GRPC
 
@@ -39,6 +37,7 @@ Your node should now be set up to connect to Shango. The next step is to send ov
  echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && cat ~/.lnd/tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
 * On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
+* Make sure you can connect to your node using the ```lncli connect --rpcserver=<YOUR PUBLIC IP> getinfo``` command first before trying to connect to Shango. 
  
 Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
 
@@ -81,6 +80,7 @@ Try sending an instant Lightning payment to one of the following demo stores:
 * https://yalls.org/
 * https://lncast.com/
 * https://testnet.satoshis.place/
+* https://example.coingate.com/
 
 
 Note: Whilst opening a channel directly to the above sites is optional, it may help you get transfers done faster and save a few Satoshis in fees. 
