@@ -2,6 +2,8 @@
 
 ## Quick Start if you want to run Shango with your own LND Node (Main Net or Testnet)
 
+Note:  The instructions below assume you have a working LND Node. If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
+
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
 
@@ -39,7 +41,7 @@ Your node should now be set up to connect to Shango. The next step is to send ov
 * On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
 * Make sure you can connect to your node using the ```lncli connect --rpcserver=<YOUR PUBLIC IP> getinfo``` command first before trying to connect to Shango. 
  
-Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
+
 
 ## Quick Start for the rest of us (Testnet Cloud Node Only for now)
 
