@@ -1,8 +1,9 @@
 # Shango - Lightning Wallet for iOS and Android
 
+
 ## Quick Start if you want to run Shango with your own LND Node (Main Net or Testnet)
 
-Note:  The instructions below assume you have a working LND Node. If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
+Note:  The instructions below assume you have a working LND Node. If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt If you don't want to invest thet time and money, scroll down for instructions on using a Shango Cloud node.
 
 #### 1. Install App
 Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
