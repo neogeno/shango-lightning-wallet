@@ -32,7 +32,7 @@ For access to your node from outside your home network, firstly make sure that t
 Your node should now be set up to connect to Shango. The next step is to send over the permission files:
 
 * Install QR Encoder, using ``` sudo apt-get install qrencode```
-* Move to the directory with LND, using ``` cd /home/<username>/.lnd``` 
+* Move to the directory with LND, using ``` cd ~/.lnd``` 
 * If you are using a Testnet node, type ``` export NETWORK=testnet ```
 * If you are using a Main Net node, type ``` export NETWORK=mainnet ```
 * Generate a QR code, using 
