@@ -39,7 +39,7 @@ Your node should now be set up to connect to Shango. The next step is to send ov
 ```
  echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
-* On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
+* On the Shango App, go to 'Settings' -> 'Connect to other LND Nodes', and scan the QR code provided
 * Make sure you can connect to your node using the ```lncli --rpcserver=<YOUR PUBLIC IP> getinfo``` command first before trying to connect to Shango. 
  
 
