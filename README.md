@@ -1,54 +1,56 @@
 # Shango - Lightning Wallet for iOS and Android
 
+
 ## Quick Start if you want to run Shango with your own LND Node (Main Net or Testnet)
 
+Note:  The instructions below assume you have a working LND Node. If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt If you don't want to invest the time and money, scroll down for instructions on using a Shango Cloud node.
+
 #### 1. Install App
-Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only private BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
 
-Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
-
-* iOS Test Flight : Read https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device after you get a confirmation email
+* iOS Test Flight : https://testflight.apple.com/join/WwCjFnS8
+* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device to opt-in to Google Beta Store testing.
 
 #### 2. Connect your node via GRPC
 
 For access to your node from outside your home network, firstly make sure that the following settings are enabled on your node:
 
 * Log into the router connected to your node, and add a port forward rule for 10009 to go to your node
-* Add the following lines to your LND conf file, using ```$ sudo nano ~/.lnd/lnd.conf```:
+* Add the following lines to your LND conf file, using ``` sudo nano ~/.lnd/lnd.conf```:
 ```
     rpclisten=0.0.0.0:10009
     tlsextraip=<your node's external ip>
     externalip=<your node's external ip>
 ```
-* Add a new uncomplicated firewall rule, using ```$ allow sudo ufw allow 10009 comment 'allow LND grpc from public internet'```
-* Enable the new uncomplicated firewall rule, using ```$ sudo ufw enable```  
-* Delete any tls.cert and tls.key files, using ```$ cd ~/.lnd``` and then ```$ sudo rm tls.cert tls.key```
-* Restart the node using by running lnd again or ```$ sudo shutdown -r now```
+* Add a new uncomplicated firewall rule, using ``` allow sudo ufw allow 10009 comment 'allow LND grpc from public internet'```
+* Enable the new uncomplicated firewall rule, using ``` sudo ufw enable```  
+* Delete any tls.cert and tls.key files, using ``` cd ~/.lnd``` and then ``` sudo rm tls.cert tls.key```
+* Restart the node using by running lnd again or ``` sudo shutdown -r now```
 * When it has restarted, it will automatically add new tls files using the information from the LND conf file
-* If needed, copy the tls files to other users, using ```$ sudo cp /home/<username 1>/.lnd/tls.cert /home/<username 2>/.lnd```
+* If needed, copy the tls files to other users, using ``` sudo cp /home/<username 1>/.lnd/tls.cert /home/<username 2>/.lnd```
 
 Your node should now be set up to connect to Shango. The next step is to send over the permission files:
 
-* Install QR Encoder, using ```$ sudo apt-get install qrencode```
-* Move to the directory with LND, using ```$ cd /home/<username>/.lnd``` 
+* Install QR Encoder, using ``` sudo apt-get install qrencode```
+* Move to the directory with LND, using ``` cd ~/.lnd``` 
+* If you are using a Testnet node, type ``` export NETWORK=testnet ```
+* If you are using a Main Net node, type ``` export NETWORK=mainnet ```
 * Generate a QR code, using 
 ```
-$ echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 admin.macaroon)," > qr.txt && cat tls.cert >>qr.txt && qrencode -t ANSIUTF8 < qr.txt
+ echo -e "$(curl -s ipinfo.io/ip),\n$(xxd -p -c2000 ~/.lnd/data/chain/bitcoin/$NETWORK/admin.macaroon)," > qr.txt && qrencode -t ANSIUTF8 < qr.txt
 ```
-* On the Shango App, go to 'Settings' -> 'Connect to your LND Server', and scan the QR code provided
+* On the Shango App, go to 'Settings' -> 'Connect to other LND Servers', and scan the QR code provided
+* Make sure you can connect to your node using the ```lncli --rpcserver=<YOUR PUBLIC IP> getinfo``` command first before trying to connect to Shango. 
  
-Note:  If you need help setting up your own personal node, this guide here is a good start and uses an inexpensive Raspberry Pi https://github.com/Stadicus/guides/tree/master/raspibolt 
+
 
 ## Quick Start for the rest of us (Testnet Cloud Node Only for now)
 
 #### 1. Install App
-Install the Shango app from Google Play or iTunes App Store. As of now I am running an invite-only BETA test. To get an invitation, simply signup at http://www.shangoapp.com/insider to test out the cutting edge releases and be ready for some bugs. 
+Install the Shango app from Google Play or iTunes App Store. As of now this app is still in Public Beta so expect some bugs, excuse them and report all bugs on the Github page so they don't get lost in Inbox Hell. To get the app, click on the test links below.
 
-Invites will be sent in batches so you may need to wait a few days for your invite. For help installing the beta, see the articles below for your platform: 
-
-* iOS Test Flight : https://developer.apple.com/testflight/testers/ for iOS
-* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango on your device after you receive a confirmation email that you have been added to the beta list
+* iOS Test Flight : https://testflight.apple.com/join/WwCjFnS8
+* Google Play Beta : Visit https://play.google.com/apps/testing/com.shango from your device to opt-in to Google Beta Store testing.
 
 #### 2. Check your node is ready
 The first time you connect to the Shango service, you will be assigned a pre-warmed, **full** LND Lightning node that can earn fees, and that is already pre-synced to the Bitcoin **testnet** blockchain and ready to use. If you get a warning that your chain is not synced or that there are no peers online yet, it is probably because the cloud service is experiencing high traffic at the moment so just wait until the chain is synced and you see the synched up icon on your dashboard as below. Check that you have at least one peer connected in the dashboard before continuing.
@@ -79,6 +81,7 @@ Try sending an instant Lightning payment to one of the following demo stores:
 * https://yalls.org/
 * https://lncast.com/
 * https://testnet.satoshis.place/
+* https://example.coingate.com/
 
 
 Note: Whilst opening a channel directly to the above sites is optional, it may help you get transfers done faster and save a few Satoshis in fees. 
@@ -133,7 +136,7 @@ Here are the points why we chose to use the cloud for the back-end:
 
 - **High Availability worldwide** Apart from the obvious benefit of being able to keep your node up and access it 24x7 when you travel, we found that most of the 2 billion unbanked population reside in developing countries, where their local power and communications infrastructure is unstable and where the government has a strong hand in all central services. Relying on a local server or phone node to conduct transactions would not be reliable or even legal in most cases. 
 
-- **There is no 100% perfect solution.** AWS is NOT unhackable, centralised cloud providers and for that matter, your local ISP/Telecom provider is not 100% censorship resistant and cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with a global cloud provider, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing them for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with $XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
+- **There is no 100% perfect solution.** AWS is NOT unhackable, centralised cloud providers and for that matter, your local ISP/Telecom provider is not 100% censorship resistant and cloud solutions are not for everyone. We get it. But the chances of you losing money are far less with a global cloud provider, and if they get hacked, at least you will be in the same boat as giants like Verizon and Netflix who together with you have a strong case suing them for hacking damages rather than trying to get back your funds you lost from your home Windows PC. So the question is, which newspaper headline would you rather read: ```Amazon servers hacked with XX Millions in losses``` or  ```Guy loses his life savings in Bitcoin stored on his PC``` ??
 
 That said, if you are doing something that you feel is controversial and may be clamped down eventually by a statutory body, your contingency plan lies in the EXPORT image feature in Shango which allows you to download a docker image snapshot of your cloud node to go elsewhere, or of course running your own private node on a secured server managed by you.
 
@@ -161,7 +164,7 @@ Before you run around yelling 'Custodian Wallet! Bad! Bad!' because you heard th
 
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers (check AWS forums if you don't believe me) Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original **base** docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
-- Shango is released as open source software (Code will be uploaded after public beta starts). So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see.
+- Shango is released as open source software (Code will be uploaded after public beta starts). So if there is any hanky panky going on you don't need to trust the app, just trust the code you can see. In fact, since Shango was built using React Native and written in ECMAScript executed at runtime, **the plain text source code is also present in every app file** for your to inspect which you can easily compare to the source code repository to ensure that what you see is what you get.
 
 Finally, if the above still hasn't convinced you, you can always use the Remote Control feature of Shango and connect to your own LND Node hosted on your PC or Server anyway. Shango gives you the option to hold your money any way you like it.
 
