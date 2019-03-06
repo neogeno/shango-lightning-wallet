@@ -149,7 +149,7 @@ Links:
 
 Before you run around yelling 'Custodian Wallet! Bad! Bad!' because you heard the word cloud, remember that even if the *LND database* is in the cloud, nobody can see your private keys except you, the keys are on your phone and *you control them*. Hence, this cannot be considered a custodial wallet.
 
-- Shango is built with **stateless** docker containers managed by the ECS FARGATE service from AWS. Nobody outside of AWS's technical team, has access to the underlying infrastructure of the nodes. i.e. There is no individual server for anyone to setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time. You can see your IP change almost every time you run Shango.
+- Shango is built with **stateless, serverless and fully managed** docker containers managed by the ECS FARGATE service from AWS. Nobody outside of AWS's technical team, not even developers of Shango, have access to the underlying infrastructure of the nodes. i.e. There is no individual server for anyone to setup, configure or attack as it is spread scross multiple zones and computing resources and changes at any time. You can see your IP change almost every time you run Shango.
 
 - Once the node shuts down, there is no storage so all the data is lost forever so there is no trace of your private information
 
@@ -157,7 +157,7 @@ Before you run around yelling 'Custodian Wallet! Bad! Bad!' because you heard th
 
 - LND is launched in *stateless init mode* which means all your access keys and certificates are **not** written to the server's temporary disk at all, they are sent over the encrypted socket and reside on your phone. So if you lose your keys on your phone, nobody else can help you.
 
-- Using docker, each node is isolated from the others, has no external SSH access and runs nothing except the LND open source software. (Docker source files made open source too)
+- Using docker, each node is launched from a template that is standard for all users. Once launched it is isolated from the others, has no external SSH access and runs nothing except the LND open source software. (Docker source files made open source too)
 
 - All the data is backed up on your device. Since there is no persistent storage on Fargate containers (check AWS forums if you don't believe me) Shango makes it easy to export your entire node as a portable docker (https://www.docker.com/what-docker) container that you can take to your own Home PC, another host like Digital Ocean etc whenever you want. So even if the Shango services shuts down you still have your node in tact. The original **base** docker images for LND were around 1GB but with a bit of tweaking we got it down to 13MB compressed which is the size of most high def photos you may already have on your phone. You can easily back this up and keep it somewhere safe and launch a Linux based LND node with your state from exactly where you left off from anywhere you like.
 
