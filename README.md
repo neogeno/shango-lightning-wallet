@@ -15,8 +15,8 @@ Install the Shango app from Google Play or iTunes App Store. As of now this app 
 
 For access to your node from outside your home network, firstly make sure that the following settings are enabled on your node:
 
-* Log into the router connected to your node, and add a port forward rule for 10009 to go to your node
-* Add the following lines to your LND conf file in the section ```[Application Options]```, using ``` sudo nano ~/.lnd/lnd.conf```:
+* Add the following lines to your LND conf file, under the ``` [Application Options] ``` section, using ``` sudo nano ~/.lnd/lnd.conf```:
+
 ```
     rpclisten=0.0.0.0:10009
     tlsextraip=<your node's external ip>
